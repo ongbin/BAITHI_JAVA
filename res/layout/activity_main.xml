@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ban"
+     >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     	android:layout_margin="10dp"
+         >
+
+			
+
+			<FrameLayout
+			    android:layout_width="130dp"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="10dp"
+			    android:background="@drawable/backgroundframe" >
+
+			    <TextView
+			        android:id="@+id/tvTien"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="40dp"
+			        android:background="@drawable/backgroundview"
+			        android:text="500" />
+			</FrameLayout>
+			<ImageView
+			    android:id="@+id/imageView1"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_marginTop="4dp"
+			    android:src="@drawable/phinh1" />
+
+			<CheckBox
+			    android:id="@+id/checkBox1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:button="@drawable/hinhamthanh"
+			    android:text="@null" />
+
+			<TextView
+			    android:id="@+id/tvThoiGian"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="#ffffff"
+			    android:layout_marginTop="40dp"
+			    android:layout_marginLeft="50dp"
+			    android:text="00:03:00" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/gvBanCo"
+            android:layout_width="wrap_content"
+            android:layout_height="192dp"
+            android:numColumns="3"
+            android:verticalSpacing="20dp" >
+
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        >
+		
+        <ImageView
+            android:id="@+id/xingau1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/dinhdongxingau" />
+        <ImageView
+            android:id="@+id/xingau2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dinhdongxingau" />
+        <ImageView
+            android:id="@+id/xingau3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dinhdongxingau"
+            
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btLacXiNgau"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonbatdau"
+        android:layout_gravity="center"
+        android:onClick="LacXiNgau"
+        android:text="@null" />
+
+</LinearLayout>
